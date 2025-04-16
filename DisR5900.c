@@ -21,6 +21,8 @@
 #include <string.h>
 
 #include "Debug.h"
+
+#define __NEEDFPUREGSTLB_H__
 #include "R5900.h"
 
 long jumpMode;

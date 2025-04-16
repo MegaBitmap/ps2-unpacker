@@ -97,6 +97,8 @@ typedef struct {
 
 extern cpuRegisters cpuRegs;
 
+#ifdef __NEEDFPUREGSTLB_H__
+
 typedef union {
     float f;
     u32 UL;
@@ -123,6 +125,8 @@ typedef struct {
 } tlbs;
 
 tlbs tlb[48];
+
+#endif
 
 typedef union
 {
